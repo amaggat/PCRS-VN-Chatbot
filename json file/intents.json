@@ -1,0 +1,204 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Hi",
+        "How are you",
+        "Is anyone there?",
+        "Hello",
+        "Good day",
+        "Whats up"
+      ],
+      "responses": [
+        "Hello!",
+        "Good to see you again!",
+        "Hi there, how can I help?"
+      ],
+      "commands": "greeting",
+      "context_set": ""
+    },
+    {
+      "tag": "goodbye",
+      "patterns": [
+        "cya",
+        "See you later",
+        "Goodbye",
+        "I am Leaving",
+        "Have a Good day"
+      ],
+      "responses": [
+        "Sad to see you go :(",
+        "Talk to you later",
+        "Goodbye!"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "age",
+      "patterns": [
+        "how old",
+        "what is your age",
+        "how old are you",
+        "age?"
+      ],
+      "responses": [
+        "I am 18 years old!",
+        "18 years young!"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "name",
+      "patterns": [
+        "what is your name",
+        "what should I call you",
+        "whats your name?",
+        "what are you?",
+        "who are you",
+        "How can you call you?"
+      ],
+      "responses": [
+        "You can call me Partz.",
+        "I'm Partz!",
+        "I'm Partz aka PC Partz."
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "job",
+      "patterns": [
+        "what do you do?",
+        "what can you do for me",
+        "how can you serve me",
+        "How can you help me",
+        "What is your service"
+      ],
+      "responses": [
+        "I am your virtual assistants.",
+        "I can help you recommend sam PC Parts!",
+        "I can support you to build PC."
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Gpu recommend",
+      "patterns": [
+        "Recommend me a gpu.",
+        "What GPU should i buy",
+        "What Gpu do you recommend me",
+        "Any graphic cards good for me"
+      ],
+      "responses": [
+        "IMO, you should see:",
+        "Ez, you can have:",
+        "I think you should check these Gpu:",
+        "Ok, i got it for you:",
+        "Look at these beauties Gpu:"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Cpu recommend",
+      "patterns": [
+        "Recommend me a Cpu.",
+        "What CPU should i buy",
+        "What CPU do you recommend me",
+        "Any processor good for me"
+      ],
+      "responses": [
+        "IMO, you should see:",
+        "Ez, you can have:",
+        "I think you should check these Cpu:",
+        "Ok, i got it for you:",
+        "Look at these beauties Cpu:"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Mainboard recommend",
+      "patterns": [
+        "Recommend me a Mainboard.",
+        "What Mainboard should i buy",
+        "What Mainboard do you recommend me",
+        "Any Mainboard good for me"
+      ],
+      "responses": [
+        "IMO, you should see:",
+        "Ez, you can have:",
+        "I think you should check these Mainboard:",
+        "Ok, i got it for you:",
+        "Look at these beauties Mainboard:"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Ram recommend",
+      "patterns": [
+        "Recommend me some Ram.",
+        "What Ram should i buy",
+        "What Ram do you recommend me",
+        "Any Ram good for me"
+      ],
+      "responses": [
+        "IMO, you should see:",
+        "Ez, you can have:",
+        "I think you should check these Ram:",
+        "Ok, i got it for you:",
+        "Look at these beauties Ram:"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Ssd recommend",
+      "patterns": [
+        "Recommend me some Ssd.",
+        "What Ssd should i buy",
+        "What Ssd do you recommend me",
+        "Any Ssd good for me"
+      ],
+      "responses": [
+        "IMO, you should see:",
+        "Ez, you can have:",
+        "I think you should check these Ssd:",
+        "Ok, i got it for you:",
+        "Look at these beauties Ssd:"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Hdd recommend",
+      "patterns": [
+        "Recommend me some Hdd.",
+        "What Hdd should i buy",
+        "What Hdd do you recommend me",
+        "Any Hdd good for me"
+      ],
+      "responses": [
+        "IMO, you should see:",
+        "Ez, you can have:",
+        "I think you should check these Hdd:",
+        "Ok, i got it for you:",
+        "Look at these beauties Hdd:"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Psu recommend",
+      "patterns": [
+        "Recommend me some Psu.",
+        "What Psu should i buy",
+        "What Psu do you recommend me",
+        "Any Psu good for me"
+      ],
+      "responses": [
+        "IMO, you should see:",
+        "Ez, you can have:",
+        "I think you should check these Psu:",
+        "Ok, i got it for you:",
+        "Look at these beauties Psu:"
+      ],
+      "context_set": ""
+    }
+  ]
+}
