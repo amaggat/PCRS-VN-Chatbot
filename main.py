@@ -1,21 +1,19 @@
 import nltk
 import numpy
-
-nltk.download('punkt')
-from nltk.stem.lancaster import LancasterStemmer
-
-stemmer = LancasterStemmer()
-
 import numpy as np
 import random
 import tensorflow
 import tflearn
 import json
 import pickle
+from nltk.stem.lancaster import LancasterStemmer
+
+
+nltk.download('punkt')
+stemmer = LancasterStemmer()
 
 with open("json file/intents.json") as file:
     data = json.load(file)
-
 
 words = []
 labels = []
@@ -59,7 +57,7 @@ for x, doc in enumerate(docs_x):
 
 training = np.array(training)
 output = np.array(output)
-with open("data.pickle", "wb") as f:
+with open("data/data.pickle", "wb") as f:
     pickle.dump((words, labels, training, output), f)
 
 tensorflow.compat.v1.reset_default_graph()
@@ -73,9 +71,9 @@ net = tflearn.regression(net)
 model = tflearn.DNN(net)
 
 
-# model.load("model.tflearn")
-model.fit(training, output, n_epoch=1000, batch_size=8, show_metric=True)
-model.save("model.tflearn")
+model.load("data/model.tflearn")
+# model.fit(training, output, n_epoch=1000, batch_size=8, show_metric=True)
+# model.save("data/model.tflearn")
 
 
 def bag_of_words(s, words):
@@ -92,21 +90,21 @@ def bag_of_words(s, words):
     return numpy.array(bag)
 
 
-def chat():
-    print("Start talking")
-    while True:
-        inp = input("You: ")
-        if inp.lower() == "quit":
-            break
-
-        results = model.predict([bag_of_words(inp, words)])
-        results_index = numpy.argmax(results)
-        tags = labels[results_index]
-        for tag in data["intents"]:
-            if tag["tag"] == tags:
-                responses = tag['responses']
-
-        print(random.choice(responses))
+class ReturnValue:
+    def __init__(self, content, tag):
+        self.content = content
+        self.tag = tag
 
 
-chat()
+def chat(inp):
+    results = model.predict([bag_of_words(inp, words)])
+    results_index = numpy.argmax(results)
+    tags = labels[results_index]
+    for tag in data["intents"]:
+        if tag["tag"] == tags:
+            responses = tag['responses']
+
+            return ReturnValue(random.choice(responses), tags)
+
+
+print(chat("What can i call you").content)
