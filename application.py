@@ -19,7 +19,7 @@ def chatbot_service():
 def chatbot_voice_service():
     data = request.json
     content_input = data['content']
-    response = voice_service.voice_recognition(content_input)
+    response = voice_service.voice_recognition("audio/" + content_input)
     return {"tag": "voice", "content": response}
 
 

@@ -35,6 +35,24 @@
       "context_set": ""
     },
     {
+      "tag": "compliments",
+      "patterns": [
+        "thank you",
+        "ty",
+        "thanks",
+        "That's very good",
+        "You are very good",
+        "Well done",
+        "ok"
+      ],
+      "responses": [
+        "My pleasure",
+        "Thank you for trusting my service",
+        "You welcome!!"
+      ],
+      "context_set": ""
+    },
+    {
       "tag": "age",
       "patterns": [
         "how old",
@@ -43,8 +61,8 @@
         "age?"
       ],
       "responses": [
-        "I am 18 years old!",
-        "18 years young!"
+        "I am 1 years old!",
+        "1 years young!"
       ],
       "context_set": ""
     },
@@ -76,7 +94,7 @@
       ],
       "responses": [
         "I am your virtual assistants.",
-        "I can help you recommend sam PC Parts!",
+        "I can help you recommend some PC Parts!",
         "I can support you to build PC."
       ],
       "context_set": ""
@@ -88,7 +106,8 @@
         "What GPU should i buy",
         "What GPU should i get",
         "What Gpu do you recommend me",
-        "Any graphic cards good for me"
+        "Any graphic cards good for me",
+        "Graphic cards"
       ],
       "responses": [
         "IMO, you should see:",
@@ -106,7 +125,9 @@
         "What CPU should i buy",
         "What CPU do you recommend me",
         "What CPU should i get",
-        "Any processor good for me"
+        "Any processor good for me",
+        "Processor",
+        "CPU"
       ],
       "responses": [
         "IMO, you should see:",
@@ -124,7 +145,9 @@
         "What Mainboard should i buy",
         "What Mainboard should i get",
         "What Mainboard do you recommend me",
-        "Any Mainboard good for me"
+        "Any Mainboard good for me",
+        "Mainboard",
+        "Motherboard"
       ],
       "responses": [
         "IMO, you should see:",
@@ -142,7 +165,9 @@
         "What Ram should i buy",
         "What Ram should i get",
         "What Ram do you recommend me",
-        "Any Ram good for me"
+        "Any Ram good for me",
+        "Ram",
+        "Memory"
       ],
       "responses": [
         "IMO, you should see:",
@@ -160,7 +185,9 @@
         "What Ssd should i buy",
         "What Ssd should i get",
         "What Ssd do you recommend me",
-        "Any Ssd good for me"
+        "Any Ssd good for me",
+        "Ssd",
+        "Fast drive"
       ],
       "responses": [
         "IMO, you should see:",
@@ -178,7 +205,9 @@
         "What Hdd should i buy",
         "What Hdd should i get",
         "What Hdd do you recommend me",
-        "Any Hdd good for me"
+        "Any Hdd good for me",
+        "Hdd",
+        "Hard drives"
       ],
       "responses": [
         "IMO, you should see:",
@@ -196,7 +225,10 @@
         "What Psu should i buy",
         "What Psu should i get",
         "What Psu do you recommend me",
-        "Any Psu good for me"
+        "Any Psu good for me",
+        "Psu",
+        "Power supply",
+        "Power"
       ],
       "responses": [
         "IMO, you should see:",
@@ -204,6 +236,18 @@
         "I think you should check these Psu:",
         "Ok, i got it for you:",
         "Look at these beauties Psu:"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "PC profile",
+      "patterns": [
+        "Find my some profile.",
+        "Make my day"
+      ],
+      "responses": [
+        "IMO, you should see:",
+        "Ez, you can check:"
       ],
       "context_set": ""
     }
