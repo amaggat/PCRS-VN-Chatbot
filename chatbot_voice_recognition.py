@@ -14,4 +14,3 @@ def voice_recognition(audio_file):
             print("Sphinx could not understand audio")
         except sr.RequestError as e:
             print("Sphinx error; {0}".format(e))
-
