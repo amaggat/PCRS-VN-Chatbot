@@ -1,0 +1,2 @@
+model_checkpoint_path: "D:\\PCRS\\PCRS-Chatbot\\chatbot\\data\\model.tflearn"
+all_model_checkpoint_paths: "D:\\PCRS\\PCRS-Chatbot\\chatbot\\data\\model.tflearn"

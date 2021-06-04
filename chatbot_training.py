@@ -12,7 +12,7 @@ from nltk.stem.lancaster import LancasterStemmer
 nltk.download('punkt')
 stemmer = LancasterStemmer()
 
-with open("json file/intents.json") as file:
+with open("chatbot/json file/intents.json") as file:
     data = json.load(file)
 
 words = []
@@ -57,7 +57,7 @@ for x, doc in enumerate(docs_x):
 
 training = np.array(training)
 output = np.array(output)
-with open("data/data.pickle", "wb") as f:
+with open("chatbot/data/data.pickle", "wb") as f:
     pickle.dump((words, labels, training, output), f)
 
 tensorflow.compat.v1.reset_default_graph()
@@ -71,7 +71,7 @@ net = tflearn.regression(net)
 model = tflearn.DNN(net)
 
 
-model.load("data/model.tflearn")
+model.load("chatbot/data/model.tflearn")
 # model.fit(training, output, n_epoch=1000, batch_size=8, show_metric=True)
 # model.save("data/model.tflearn")
 

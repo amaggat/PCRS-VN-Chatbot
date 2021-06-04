@@ -90,7 +90,9 @@
         "what can you do for me",
         "how can you serve me",
         "How can you help me",
-        "What is your service"
+        "What is your service",
+        "How can you support me",
+        "How could you support me"
       ],
       "responses": [
         "I am your virtual assistants.",
