@@ -1,7 +1,7 @@
 from flask import Flask
 from flask_restful import Api, request
 import chatbot_training as service
-import voice_vosk as vosk_service
+import vosk_recognition as vosk_service
 
 app = Flask(__name__)
 api = Api(app)
