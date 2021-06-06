@@ -86,7 +86,7 @@
     {
       "tag": "job",
       "patterns": [
-        "what do you do?",
+        "what do you do",
         "what can you do for me",
         "how can you serve me",
         "How can you help me",
@@ -104,7 +104,7 @@
     {
       "tag": "Gpu recommend",
       "patterns": [
-        "Recommend me a gpu.",
+        "Recommend me a gpu",
         "What GPU should i buy",
         "What GPU should i get",
         "What Gpu do you recommend me",
@@ -123,7 +123,7 @@
     {
       "tag": "Cpu recommend",
       "patterns": [
-        "Recommend me a Cpu.",
+        "Recommend me a cpu",
         "What CPU should i buy",
         "What CPU do you recommend me",
         "What CPU should i get",

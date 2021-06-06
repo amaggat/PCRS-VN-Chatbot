@@ -2,6 +2,7 @@ from flask import Flask
 from flask_restful import Api, request
 import chatbot_training as service
 import vosk_recognition as vosk_service
+import voice_recognition as google_service
 
 app = Flask(__name__)
 api = Api(app)
@@ -19,8 +20,8 @@ def chatbot_service():
 def voice_service():
     data = request.json
     content_input = data['content']
-    # response = voice_service.voice_recognition("audio/" + content_input)
-    response = vosk_service.vosk_recognition("voice/audio/" + content_input)
+    response = google_service.voice_recognition("voice/audio/" + content_input)
+    # response = vosk_service.vosk_recognition("voice/audio/" + content_input)
     return {"tag": "voice", "content": response}
 
 

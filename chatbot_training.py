@@ -72,7 +72,7 @@ model = tflearn.DNN(net)
 
 
 model.load("chatbot/data/model.tflearn")
-# model.fit(training, output, n_epoch=1000, batch_size=16, show_metric=True)
+# model.fit(training, output, n_epoch=1000, batch_size=8, show_metric=True)
 # model.save("chatbot/data/model.tflearn")
 
 
