@@ -11,6 +11,6 @@ def voice_recognition(audio_file):
             text = r.recognize_google(audio)
             return text
         except sr.UnknownValueError:
-            print("Sphinx could not understand audio")
+            print("Sphinx could not understand voice")
         except sr.RequestError as e:
             print("Sphinx error; {0}".format(e))

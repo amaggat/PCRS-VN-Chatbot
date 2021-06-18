@@ -20,8 +20,8 @@ def chatbot_service():
 def voice_service():
     data = request.json
     content_input = data['content']
-    response = google_service.voice_recognition("voice/audio/" + content_input)
-    # response = vosk_service.vosk_recognition("voice/audio/" + content_input)
+    response = google_service.voice_recognition("voice/voice/" + content_input)
+    # response = vosk_service.vosk_recognition("voice/voice/" + content_input)
     return {"tag": "voice", "content": response}
 
 

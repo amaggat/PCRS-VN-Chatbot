@@ -36,4 +36,4 @@ def vosk_recognition(file):
     return res['text']
 
 
-print(vosk_recognition("voice/audio/hello_iam_me.wav"))
+print(vosk_recognition("voice/audio/test.wav"))

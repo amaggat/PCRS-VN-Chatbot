@@ -94,7 +94,9 @@ file.upload-dir=(Directory)/PCRS-Chatbot/voice/audio
 
 ## Chatbot
 1. Install all requirements
-2. Run ```application.py``` and you ready to go.
+2. Download model [here](https://vnueduvn-my.sharepoint.com/:u:/g/personal/18021174_vnu_edu_vn/EQNAlpZkoWRPjRaIPuiuiN4Bp3koFNhOUNwlvxDm9a2mcQ?e=UzmNUn)
+3. unzip model file to ```audio```.
+4. Run ```application.py``` and you ready to go.
 
 *For more detail, please checkout our Chatbot service [here](https://github.com/amaggat/PCRS-VN-Chatbot)*
 
